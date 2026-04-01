@@ -1,0 +1,49 @@
+/* ============================================================
+   FERNANDA VALERIANO — efeitos JS · adicione ao seu style.css
+   ============================================================ */
+
+
+
+
+/* ── SCROLL REVEAL ───────────────────────────────────────────── */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ── TYPED — cursor piscando ────────────────────────────────── */
+#typed::after {
+    content: '|';
+    animation: blink-cursor .75s step-end infinite;
+    color: var(--green-light);
+    margin-left: 2px;
+}
+@keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+
+/* ── ACTIVE LINK no nav ──────────────────────────────────────── */
+.nav-r a.active-link,
+.nav-links a.active-link {
+    color: var(--green-light) !important;
+}
+
+
+/* ── HAMBURGER animado (mobile) ──────────────────────────────── */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
