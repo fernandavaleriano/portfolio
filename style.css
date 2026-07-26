@@ -26,6 +26,36 @@ body {
     background-color: var(--bg-color);
     color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
+    padding-top: 56px;
+}
+
+.announcement-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #c8ff4d, #b8ff1f);
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-banner a {
+    color: #0d0d0d;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.announcement-banner a:hover {
+    opacity: 0.8;
 }
 
 a {
